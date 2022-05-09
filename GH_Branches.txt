@@ -1,0 +1,174 @@
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git branch Postman
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git branch Jmetr
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git branch CheckLists
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git branch BugReports
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git branch SQL
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git branch Charles
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git branch MobileTesting
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git push origin --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Olga-Igorevna/Branches.git
+ * [new branch]      BugReports -> BugReports
+ * [new branch]      Charles -> Charles
+ * [new branch]      CheckLists -> CheckLists
+ * [new branch]      Jmetr -> Jmetr
+ * [new branch]      MobileTesting -> MobileTesting
+ * [new branch]      Postman -> Postman
+ * [new branch]      SQL -> SQL
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git checkout BagReports
+error: pathspec 'BagReports' did not match any file(s) known to git
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git branch
+  BugReports
+  Charles
+  CheckLists
+  Jmetr
+  MobileTesting
+  Postman
+  SQL
+* main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (main)
+$ git checkout BugReports
+Switched to branch 'BugReports'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (BugReports)
+$ vim BugReport.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (BugReports)
+$ git push -u origin BugReports
+Everything up-to-date
+branch 'BugReports' set up to track 'origin/BugReports'.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (BugReports)
+$ git add .
+warning: LF will be replaced by CRLF in BugReport.txt.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (BugReports)
+$ git commit -m "create file"
+[BugReports d8611d0] create file
+ 1 file changed, 45 insertions(+)
+ create mode 100644 BugReport.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (BugReports)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.41 KiB | 1.41 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Olga-Igorevna/Branches.git
+   415cbab..d8611d0  BugReports -> BugReports
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (BugReports)
+$ git merge main
+Already up to date.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (BugReports)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (BugReports)
+$ git checkout CheckLists
+Switched to branch 'CheckLists'
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ vim CheckLists.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git add .
+warning: LF will be replaced by CRLF in CheckLists.txt.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git commit -m "create file"
+[CheckLists 0547c67] create file
+ 1 file changed, 38 insertions(+)
+ create mode 100644 CheckLists.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git push
+fatal: The current branch CheckLists has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin CheckLists
+
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ vim CheckLists.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git add .
+warning: LF will be replaced by CRLF in CheckLists.txt.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ vim CheckLists.txt
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git add .
+warning: LF will be replaced by CRLF in CheckLists.txt.
+The file will have its original line endings in your working directory
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git commit -m "create file"
+[CheckLists dc458cd] create file
+ 1 file changed, 1 insertion(+)
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git push
+fatal: The current branch CheckLists has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin CheckLists
+
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git push --set-upstream origin CheckLists
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 915 bytes | 915.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Olga-Igorevna/Branches.git
+   415cbab..dc458cd  CheckLists -> CheckLists
+branch 'CheckLists' set up to track 'origin/CheckLists'.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 634 bytes | 79.00 KiB/s, done.
+From https://github.com/Olga-Igorevna/Branches
+   415cbab..b7fdc1b  main       -> origin/main
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$ git pull
+Already up to date.
+
+Olia@kot MINGW64 /d/Ольга/Тестирование/group_29_free/Git_test/Branches (CheckLists)
+$
